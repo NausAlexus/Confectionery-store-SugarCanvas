@@ -160,11 +160,13 @@ body::-webkit-scrollbar-track {
 .hero-title {
     font-size: 2.5em;
     margin-bottom: 10px;
+    padding: 10px;
 }
 
 .hero-subtitle {
     font-size: 1.5em;
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 .hero-button {
@@ -1212,62 +1214,67 @@ body::-webkit-scrollbar-track {
     }
 }
 
+.reviews-section {
+    overflow: hidden;
+}
+
 .reviews-section-title {
     text-align: center;
     font-size: 2em;
     color: #7e490b;
     margin-bottom: 15px;
 }
+
 .slider-review {
     margin-top: 15px;
-      display: flex;
-      gap: 15px;
-      transition: transform 0.5s ease-in-out;
-  }
-  .review {
-      min-width: 45%;
-      width: 100px;
-      padding: 5px;
-      border: 2px solid #7e490b;
-      border-radius: 30px;
-  }
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review {
+    flex: 0 0 100%;
+    padding: 5px;
+    border: 2px solid #7e490b;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
 
 .review p {
     font-size: 14px;
     color: #7e490b;
 }
-  
-  .author {
-      font-weight: bold;
-      color: rgb(150, 55, 20);
-      margin-top: 5px;
-      font-size: 12px;
-  }
-  .buttons-review {
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-  }
-  .btn-review {
-        width: 100%;
-        padding: 10px 10px;
-        margin: 5px;
-        border-radius: 30px;
-        border: none;
-        color: black;
-        cursor: pointer;
-        background-color: #eaeaea;
-        transition: background-color 0.3s ease;
-  }
-  
-  .review img {
+
+.author {
+    font-weight: bold;
+    color: rgb(150, 55, 20);
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.buttons-review {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-review {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: #eaeaea;
+    transition: background-color 0.3s ease;
+}
+
+.review img {
     width: 100px;
     border-radius: 50%;
     margin-bottom: 5px;
 }
-.reviews-section{
-    overflow: hidden;
-}
+
 
 .location-section {
     display: flex;
@@ -1622,5 +1629,8 @@ body::-webkit-scrollbar-track {
     }
     .order-button:hover {
         background-color: #ff5420;
+    }
+    .privacy-link:hover {
+        color: #000000;
     }
 }
